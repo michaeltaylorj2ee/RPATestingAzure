@@ -7,7 +7,7 @@
     "UiPath.Credentials.Activities": "[1.1.6479.13204]",
     "UiPath.Excel.Activities": "[2.8.5]",
     "UiPath.System.Activities": "[20.4.0]",
-    "UiPath.Testing.Activities": "[1.0.0]",
+    "UiPath.Testing.Activities": "[1.1.2-preview]",
     "UiPath.UIAutomation.Activities": "[20.4.1]",
     "UiPath.WebAPI.Activities": "[1.4.4]",
     "UiPathTeam.JsonToCsvConverter.Activities": "[1.1.0]"

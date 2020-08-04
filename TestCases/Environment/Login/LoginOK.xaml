@@ -89,15 +89,9 @@
       </sap:WorkflowViewStateService.ViewState>
       <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke UiBank_LogIn workflow" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="UiBank\UiBank_LogIn.xaml">
         <ui:InvokeWorkflowFile.Arguments>
-          <InArgument x:TypeArguments="x:String" x:Key="in_uiBankAppFolderPath">
-            <Literal x:TypeArguments="x:String">C:\Emerald\Desktop App</Literal>
-          </InArgument>
-          <InArgument x:TypeArguments="ss:SecureString" x:Key="in_password">
-            <mva:VisualBasicValue x:TypeArguments="ss:SecureString" ExpressionText="password" />
-          </InArgument>
-          <InArgument x:TypeArguments="x:String" x:Key="in_username">
-            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="username" />
-          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="in_uiBankAppFolderPath">C:\Emerald\Desktop App</InArgument>
+          <InArgument x:TypeArguments="ss:SecureString" x:Key="in_password">[password]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="in_username">[username]</InArgument>
         </ui:InvokeWorkflowFile.Arguments>
       </ui:InvokeWorkflowFile>
     </Sequence>
@@ -107,7 +101,7 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <uta:VerifyControlAttribute ContinueOnFailure="True" DisplayName="Verify Control Attribute" sap:VirtualizedContainerService.HintSize="612,180" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_1" Operator="Equality" OutputArgument="Exists" TakeScreenshotInCaseOfFailingAssertion="True">
+      <uta:VerifyControlAttribute KeepScreenshots="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Control Attribute" sap:VirtualizedContainerService.HintSize="612,180" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_1" Operator="Equality" OutputArgument="Exists" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="True">
         <uta:VerifyControlAttribute.ActivityToTest>
           <ActivityAction>
             <ui:UiElementExists DisplayName="Element Exists 'WindowsForms10.Window.8...'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
