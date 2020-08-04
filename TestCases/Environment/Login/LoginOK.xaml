@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1081,1208</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1360,1248</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>LoginOK_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -89,9 +89,15 @@
       </sap:WorkflowViewStateService.ViewState>
       <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke UiBank_LogIn workflow" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="UiBank\UiBank_LogIn.xaml">
         <ui:InvokeWorkflowFile.Arguments>
-          <InArgument x:TypeArguments="x:String" x:Key="in_uiBankAppFolderPath">C:\Emerald\UiBank\UiBank Admin</InArgument>
-          <InArgument x:TypeArguments="ss:SecureString" x:Key="in_password">[password]</InArgument>
-          <InArgument x:TypeArguments="x:String" x:Key="in_username">[username]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="in_uiBankAppFolderPath">
+            <Literal x:TypeArguments="x:String">C:\Emerald\Desktop App</Literal>
+          </InArgument>
+          <InArgument x:TypeArguments="ss:SecureString" x:Key="in_password">
+            <mva:VisualBasicValue x:TypeArguments="ss:SecureString" ExpressionText="password" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="in_username">
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="username" />
+          </InArgument>
         </ui:InvokeWorkflowFile.Arguments>
       </ui:InvokeWorkflowFile>
     </Sequence>
