@@ -65,11 +65,6 @@
         "editingStatus": "InProgress",
         "testCaseId": "63b67b6c-c447-4e2b-a21d-38f6c8f4c40a",
         "fileName": "TestCases\\NegativeAccountsProcess\\NegativeAccountsUICheck.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
-        "testCaseId": "2b58092c-b2cc-4355-98e8-6422c5239f1f",
-        "fileName": "UiBank\\TestCase.xaml"
       }
     ]
   },
