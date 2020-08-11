@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1360,1248</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1556,1248</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>LoginOK_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -145,7 +145,7 @@
           </ActivityFunc>
         </uta:VerifyControlAttribute.ArgumentsBridgeActivity>
         <uta:VerifyControlAttribute.Expression>
-          <InArgument x:TypeArguments="x:Boolean">[True]</InArgument>
+          <InArgument x:TypeArguments="x:Boolean">[False]</InArgument>
         </uta:VerifyControlAttribute.Expression>
       </uta:VerifyControlAttribute>
       <ui:CloseApplication DisplayName="Close Application 'UiBankAdmin.exe UiBank'" sap:VirtualizedContainerService.HintSize="612,106" sap2010:WorkflowViewState.IdRef="CloseApplication_1">
