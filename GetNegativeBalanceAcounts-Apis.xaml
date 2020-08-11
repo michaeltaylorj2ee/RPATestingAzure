@@ -76,7 +76,7 @@
         <x:Boolean x:Key="IsPinned">False</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="UiBank API Endpoint" DisplayName="Get Endpoint" sap:VirtualizedContainerService.HintSize="521,22" sap2010:WorkflowViewState.IdRef="GetRobotAsset_1">
+    <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="UiBank API Endpoint" DisplayName="Get Endpoint" FolderPath="Mick Taylor" sap:VirtualizedContainerService.HintSize="521,22" sap2010:WorkflowViewState.IdRef="GetRobotAsset_1">
       <ui:GetRobotAsset.Value>
         <OutArgument x:TypeArguments="x:String">[baseUrl]</OutArgument>
       </ui:GetRobotAsset.Value>
