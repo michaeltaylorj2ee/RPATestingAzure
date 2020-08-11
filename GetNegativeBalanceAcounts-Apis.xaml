@@ -155,17 +155,17 @@
           <ui:DeserializeJson x:TypeArguments="njl:JArray" DisplayName="Deserialize JSON" sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_4" JsonObject="[accountsObj]" JsonString="[result]" />
           <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,61" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[&quot;Status: &quot; + statusCode.ToString + Environment.NewLine + &quot;Accounts: &quot; +accountsObj.ToString]" />
           <j:ConvertJsonToCSV InputJsonFilePath="{x:Null}" DisplayName="Convert json to CSV" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="ConvertJsonToCSV_1" InputJsonString="[result]" OutputCSVFilePath="accounts.csv" />
-          <ui:ReadCsvFile Encoding="{x:Null}" DataTable="[accountsDt]" Delimitator="Comma" DisplayName="Read CSV" FilePath="accounts.csv" sap:VirtualizedContainerService.HintSize="334,152" sap2010:WorkflowViewState.IdRef="ReadCsvFile_1" />
+          <ui:ReadCsvFile Encoding="{x:Null}" DataTable="[accountsDt]" Delimitator="Comma" DisplayName="Read CSV" FilePath="accounts2.csv" sap:VirtualizedContainerService.HintSize="334,152" sap2010:WorkflowViewState.IdRef="ReadCsvFile_1" />
           <ui:RemoveDataColumn Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="userId" DataTable="[accountsDt]" DisplayName="Remove Data Column" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="RemoveDataColumn_1" />
           <ui:RemoveDataColumn Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="id" DataTable="[accountsDt]" DisplayName="Remove Data Column" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="RemoveDataColumn_2" />
           <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="email" DataTable="[accountsDt]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_1" />
-          <ui:WriteCsvFile Encoding="{x:Null}" AddHeaders="True" DataTable="[accountsDt]" Delimitator="Comma" DisplayName="Write CSV" FilePath="Data\Input\negativeAccounts.csv" sap:VirtualizedContainerService.HintSize="334,152" sap2010:WorkflowViewState.IdRef="WriteCsvFile_1" />
+          <ui:WriteCsvFile Encoding="{x:Null}" AddHeaders="True" DataTable="[accountsDt]" Delimitator="Comma" DisplayName="Write CSV" FilePath="Data\Input\negativeAccounts2.csv" sap:VirtualizedContainerService.HintSize="334,152" sap2010:WorkflowViewState.IdRef="WriteCsvFile_1" />
           <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_4">
             <Assign.To>
               <OutArgument x:TypeArguments="x:String">[OUT_outputFile]</OutArgument>
             </Assign.To>
             <Assign.Value>
-              <InArgument x:TypeArguments="x:String">["Data\Input\negativeAccounts.csv"]</InArgument>
+              <InArgument x:TypeArguments="x:String">Data\Input\negativeAccounts2.csv</InArgument>
             </Assign.Value>
           </Assign>
         </Sequence>
