@@ -145,7 +145,7 @@
           </ActivityFunc>
         </uta:VerifyControlAttribute.ArgumentsBridgeActivity>
         <uta:VerifyControlAttribute.Expression>
-          <InArgument x:TypeArguments="x:Boolean">[False]</InArgument>
+          <InArgument x:TypeArguments="x:Boolean">[True]</InArgument>
         </uta:VerifyControlAttribute.Expression>
       </uta:VerifyControlAttribute>
       <ui:CloseApplication DisplayName="Close Application 'UiBankAdmin.exe UiBank'" sap:VirtualizedContainerService.HintSize="612,106" sap2010:WorkflowViewState.IdRef="CloseApplication_1">
