@@ -26,7 +26,9 @@
       "Private:*",
       "*password*"
     ],
-    "executionType": "Workflow"
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false
   },
   "designOptions": {
     "projectProfile": "Developement",
@@ -34,6 +36,9 @@
     "libraryOptions": {
       "includeOriginalXaml": false,
       "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
     },
     "fileInfoCollection": [
       {
@@ -66,7 +71,8 @@
         "testCaseId": "63b67b6c-c447-4e2b-a21d-38f6c8f4c40a",
         "fileName": "TestCases\\NegativeAccountsProcess\\NegativeAccountsUICheck.xaml"
       }
-    ]
+    ],
+    "modernBehavior": false
   },
   "arguments": {
     "input": [
@@ -84,5 +90,8 @@
       }
     ]
   },
-  "expressionLanguage": "VisualBasic"
+  "expressionLanguage": "VisualBasic",
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {}
 }
